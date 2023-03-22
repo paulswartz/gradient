@@ -32,3 +32,7 @@ defmodule Annotations.ShouldFail.BadAnno do
     l |> assert_type(float()) |> hd()
   end
 end
+
+defmodule Annotations.ShouldPass.Import do
+  import Annotations.ShouldPass
+end
